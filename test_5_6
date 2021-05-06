@@ -1,0 +1,62 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int main()
+{
+	int a = 0;
+	int arr[10] = { 0 };//10个整形元素的数组
+	//10*sizeof(int) = 40
+	printf("%d\n", sizeof(arr));
+	//计算数组的元素个数
+	//个数 = 数组总大小/每个元素的大小
+	a = sizeof(arr) / sizeof(arr[0]);
+	printf("%d\n", a);
+
+
+	//int a = 10;
+	////sizeof计算的是变量/类型所占空间的大小，单位是字节
+	//printf("%d\n", sizeof(a));//4
+	//printf("%d\n", sizeof(int));//4
+	//printf("%d\n", sizeof a);
+	////printf("%d\n", sizeof int); 报错
+	return 0;
+}
+
+//单目操作符
+//双目操作符
+//三目操作符
+//int main()
+//{
+//	//int a = 10;
+//	//int b = 20;
+//	//a + b;// + 双目操作符
+//
+//	//在C语言中表示真假
+//	//0-假
+//	//非0-真
+//	int a = 0;
+//	printf("%d\n", a);
+//	printf("%d\n", !a);
+//	return 0;
+//}
+
+//复合运算符
+//+= -= *= /= %= >>= <<= &= |= ^=
+
+//int main()
+//{
+//	//位操作（2进制位）
+//	//& 按位与
+//	//| 按位或
+//	//^ 按位异或
+//	int a = 3;
+//	int b = 5;
+//	int c = a^b;
+//	//异或的计算规律：对应的二进制位相同为0，相异为1
+//	//011
+//	//101
+//	//001
+//	printf("%d\n", c);
+//	return 0;
+//}
