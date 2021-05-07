@@ -107,3 +107,62 @@ int main()						{
 //	u_int num = 2;
 //	return 0;
 //}
+
+
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int main()
+{
+	char ch = 'w';
+	char* pc = &ch;
+	printf("%d\n", sizeof(pc));
+	return 0;
+}
+
+//int main()
+//{
+//	int a = 10;//4个字节
+//	int* p = &a;//取地址
+//	printf("%p\n", &a);
+//	printf("%p\n", p);
+//	*p = 20;//* 解引用操作符
+//	printf("%d\n", a);
+//	//有一种变量是用来存放地址的-指针变量
+//    //printf("%p\n", &a);
+//
+//	return 0;
+//}
+
+
+//#define 定义标识符常量
+#define MAX 100
+//#define 还可以定义宏-带参数
+
+//函数的实现
+//int Max(int x, int y)
+//{
+//	if (x > y)
+//		return x;
+//	else
+//		return y;
+//}
+//
+////宏的定义
+//#define MAX(X,Y) (X>Y?X:Y)
+//
+//int main()
+//{
+//	//int a = MAX;
+//	int a = 1;
+//	int b = 20;
+//	//函数
+//	int max = Max(a, b);
+//	printf("max = %d\n", max);
+//	//宏
+//	max = Max(a, b);
+//	//max = (a>b?a:b)
+//	printf("max = %d\n", max);
+//	return 0;
+//}
