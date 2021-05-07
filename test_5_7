@@ -1,0 +1,46 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int main()
+{
+	register int a = 10;//建议把a定义成寄存器变量
+
+	return 0;
+}
+
+//int Add(int x, int y)
+//{
+//	int z = 0;
+//	z = x + y;
+//	return z;
+//}
+//
+//int main()
+//{
+////	int arr[10] = { 0 };
+////	arr[4];//[] 下标引用操作符
+//	int a = 10;
+//	int b = 20;
+//	int sum = Add(a, b);//() 函数调用操作符
+//	printf("%d\n", sum);
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int max = 0;
+//
+//	max = (a > b ? a : b);//三目操作符
+//	//       1     2   3    三目
+//	//if (a > b)
+//	//	max = a;
+//	//else
+//	//	max = b;
+//	printf("max = %d\n", max);
+//
+//	return 0;
+//}
