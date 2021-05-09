@@ -1,1 +1,45 @@
+#define _CRT_SECURE_NO_WARNINGS 1
 
+#include <stdio.h>
+
+//1.计算n的阶乘
+//不考虑溢出情况
+
+//int main()
+//{
+//	int n = 0;
+//	int i = 1;
+//	int j = 0;
+//	printf("请输入需要求阶乘的整数：>");
+//	scanf("%d", &n);
+//	j = n;
+//	for (;n > 0;n--)
+//	{
+//		i = i * n;
+//	}
+//	printf("%d的阶乘为：%d\n", j,i);
+//	return 0;
+//}
+
+
+//2.计算1!+2!+3!+......+10!
+
+int main()
+{
+	int i = 0;
+	int n = 0;
+	int ret = 1;
+	int sum = 0;
+	for (n = 1; n <= 10; n++)
+	{
+		ret = 1;
+		for (i = 1; i <= n; i++)
+		{
+			ret = ret * i;
+		}
+		//n的阶乘
+		sum = sum + ret;
+	}
+	printf("%d\n", sum);
+	return 0;
+}
