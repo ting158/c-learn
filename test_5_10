@@ -1,0 +1,92 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+//猜数字游戏
+//1.生成一个随机数
+//2.猜数字
+
+void menu()
+{
+	printf("**********************\n");
+	printf("***1.start  2.exit****\n");
+	printf("**********************\n");
+}
+
+void game()
+
+{
+	//1.生成随机数
+	int ret = 0;
+	int guess = 0;//接受猜的数字
+	//拿时间戳来设置随机数生成的起始点
+	ret = rand()%100 + 1;//生成一个1-100之间的随机数
+	//printf("%d\n", ret);
+	//2.猜数字
+	while (1)
+	{
+		printf("猜数字:>");
+		scanf("%d", &guess);
+		if (guess > ret)
+		{
+			printf("大了");
+		}
+		else if (guess == ret)
+		{
+			printf("猜对了\n");
+			break;
+		}
+		else
+		{
+			printf("小了\n");
+		}
+	}
+}
+//RAND_MAX-32767
+
+int main()
+{
+	int input = 0;
+	srand((unsigned int)time(NULL));
+	do
+	{
+		menu();
+		printf("请选择>:");
+		scanf("%d", &input);
+		switch (input)
+		{
+		case 1:
+			game();
+			break;
+		case 2:
+			printf("退出游戏\n");
+			break;
+		default:
+			printf("选择错误\n");
+			break;
+		}
+	} 	while (input != 2);
+	return 0;
+}
+
+//九九乘法表
+//int main()
+//{
+//	int i = 1;
+//	int j = 1;
+//	int ij = 0;
+//	for (i = 1;i <= 9;i++)
+//	{
+//		for (j = 1;j <= i;j++)
+//		{
+//			ij = i * j;
+//			printf("%d * %d = %d\t", i,j,ij);
+//			
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
