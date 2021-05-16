@@ -9,7 +9,7 @@ int main()
 	//int c = 3;
 	//int d = 4;
 	int i = 0;
-	int arr[10] = {1,2,3,4,5,6,7,8,9,10};//å®šä¹‰ä¸€ä¸ªå­˜æ”¾10ä¸ªæ•´æ•°æ•°å­—çš„æ•°ç»„
+	int arr[10] = {1,2,3,4,5,6,7,8,9,10};//¶¨ÒåÒ»¸ö´æ·Å10¸öÕûÊıÊı×ÖµÄÊı×é
 	//0-9
 	while (i < 10)
 	{
@@ -18,8 +18,8 @@ int main()
 	}
 										 
 										 
-	//printf("%d", arr[0]);//ä¸‹æ ‡çš„æ–¹å¼è®¿é—®å…ƒç´ 
-	//arr[ä¸‹æ ‡];
+	//printf("%d", arr[0]);//ÏÂ±êµÄ·½Ê½·ÃÎÊÔªËØ
+	//arr[ÏÂ±ê];
 
 	//char ch[20];
 	//float arr2[5];
@@ -40,7 +40,7 @@ int main()
 //	int num2 = 34;
 //	int sum = 0;
 //	sum = Add(num1, num2);
-//	printf("å’Œä¸ºï¼š%d\n", sum);
+//	printf("ºÍÎª£º%d\n", sum);
 //
 //
 //	return 0;
@@ -49,15 +49,15 @@ int main()
 //int main()
 //{
 //	int i = 0;
-//	printf("åŠ å…¥æ¯”ç‰¹\n");
+//	printf("¼ÓÈë±ÈÌØ\n");
 //
 //	while (i < 20000)
 //	{
-//		printf("%dï¼šæ•²ä¸€è¡Œä»£ç \n", i);
+//		printf("%d£ºÇÃÒ»ĞĞ´úÂë\n", i);
 //		i++;
 //	}
 //	if (i >= 20000)
-//		printf("å¥½offer\n");
+//		printf("ºÃoffer\n");
 //
 //	return 0;
 //}
@@ -66,13 +66,13 @@ int main()
 //int main()
 //{
 //	int include = 0;
-//	printf("åŠ å…¥æ¯”ç‰¹ï¼Œä½ è¦ï¼Ÿ\n");
-//	printf("ä½ è¦å¥½å¥½å­¦ä¹ å—ï¼Ÿï¼ˆ1/0ï¼‰");
+//	printf("¼ÓÈë±ÈÌØ£¬ÄãÒª£¿\n");
+//	printf("ÄãÒªºÃºÃÑ§Ï°Âğ£¿£¨1/0£©");
 //	scanf("%d", &include);
 //	if (include == 1)
-//		printf("å¥½offer");
+//		printf("ºÃoffer");
 //	else
-//		printf("è¿›å‚");
+//		printf("½ø³§");
 //
 //	return 0;
 //}

@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
 #include <stdio.h>
+#include <string.h>
 
 //int Fac1(int n)
 //{
@@ -27,71 +28,70 @@
 //
 //int main()
 //{
-//	//æ±‚nçš„é˜¶ä¹˜ï¼Œå¿½ç•¥æº¢å‡ºæƒ…å†µ
+//	//ÇónµÄ½×³Ë£¬ºöÂÔÒç³öÇé¿ö
 //	int n = 0;
-//	printf("è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°>:");
+//	printf("ÇëÊäÈëÒ»¸öÕıÕûÊı>:");
 //	scanf("%d", &n);
 //	int fac = Fac2(n);
-//	printf("%dçš„é˜¶ä¹˜ä¸ºï¼š%d\n", n, fac);
+//	printf("%dµÄ½×³ËÎª£º%d\n", n, fac);
 //	return 0;
 //}
 
 
-//æ–æ³¢é‚£å¥‘æ•°åˆ—
+//ì³²¨ÄÇÆõÊıÁĞ
 //1,1,2,3,5,8,13,21,34,...
-//åˆ—å‡ºæ–æ³¢é‚£å¥‘æ•°åˆ—çš„ç¬¬né¡¹
+//ÁĞ³öì³²¨ÄÇÆõÊıÁĞµÄµÚnÏî
 
-int Fib1(int n)
-{
-	if (n <= 2)
-	{
-		return 1;
-	}
-	else
-	{
-		return Fib1(n - 1) + Fib1(n - 2);
-	}
-}
-
-int Fib2(int n)
-{
-	int a = 1;
-	int b = 1;
-	int c = 1;
-	while (n > 2)
-	{
-		c = a + b;
-		a = b;
-		b = c;
-		n--;
-	}
-	return c;
-	
-}
-int main()
-{
-	int n = 0;
-	scanf("%d", &n);
-	int num = Fib2(n);
-	printf("%d\n", num);
-	return 0;
-}
-
+//int Fib1(int n)
+//{
+//	if (n <= 2)
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return Fib1(n - 1) + Fib1(n - 2);
+//	}
+//}
+//
+//int Fib2(int n)
+//{
+//	int a = 1;
+//	int b = 1;
+//	int c = 1;
+//	while (n > 2)
+//	{
+//		c = a + b;
+//		a = b;
+//		b = c;
+//		n--;
+//	}
+//	return c;
+//	
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int num = Fib2(n);
+//	printf("%d\n", num);
+//	return 0;
+//}
 
 
 //int main()
 //{
-//	//åˆ›å»ºä¸€ä¸ªæ•°ç»„
-//	int arr1[10] = {1,2,3};//ä¸å®Œå…¨åˆå§‹åŒ–ï¼Œå‰©ä¸‹çš„å…ƒç´ é»˜è®¤åˆå§‹åŒ–ä¸º0
+//	//´´½¨Ò»¸öÊı×é
+//	int arr1[10] = {1,2,3};//²»ÍêÈ«³õÊ¼»¯£¬Ê£ÏÂµÄÔªËØÄ¬ÈÏ³õÊ¼»¯Îª0
 //	char arr2[5] = {'a',98};
 //	char arr3[5] = "abc";//ok
 //	char arr4[] = "abcdef";
 //	printf("%d\n", sizeof(arr4));//7
-//	//sizeofè®¡ç®—arr4æ‰€å ç©ºé—´çš„å¤§å°
-//	//7ä¸ªå…ƒç´  7*1 = 7
+//	//sizeof¼ÆËãarr4ËùÕ¼¿Õ¼äµÄ´óĞ¡
+//	//7¸öÔªËØ 7*1 = 7
 //
 //	printf("%d\n", strlen(arr4));//6
-//	//strlenæ±‚å­—ç¬¦ä¸²é•¿åº¦--\0ä¹‹å‰çš„å­—ç¬¦ä¸ªæ•°
+//	//strlenÇó×Ö·û´®³¤¶È--\0Ö®Ç°µÄ×Ö·û¸öÊı
 //	// [a b c d e f \0]
 //	// 	6
 //	//int n = 5;
@@ -107,7 +107,7 @@ int main()
 //	printf("%d\n", sizeof(arr1));//4
 //	printf("%d\n", sizeof(arr2));//3
 //	printf("%d\n", strlen(arr1));//3
-//	printf("%d\n", strlen(arr2));//éšæœºæ•°
+//	printf("%d\n", strlen(arr2));//Ëæ»úÊı
 //	return 0;
 //}
 

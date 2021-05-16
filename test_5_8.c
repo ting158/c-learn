@@ -2,19 +2,19 @@
 
 #include <stdio.h>
 
-//åˆ¤æ–­ä¸€ä¸ªæ•°æ˜¯å¦ä¸ºå¥‡æ•°
+//ÅĞ¶ÏÒ»¸öÊıÊÇ·ñÎªÆæÊı
 //int main()
 //{
 //	int num = 1;
 //	if (1 == num % 2)
-//		printf("å¥‡æ•°\n");
+//		printf("ÆæÊı\n");
 //	else
-//		printf("å¶æ•°\n");
+//		printf("Å¼Êı\n");
 //
 //	return 0;
 //}
 
-//è¾“å‡º1-100ä¹‹é—´çš„å¥‡æ•°
+//Êä³ö1-100Ö®¼äµÄÆæÊı
 int main()
 {
 	int num = 1;
@@ -46,31 +46,31 @@ int main()
 //	int age = 14;
 //	if (age < 18)
 //	{
-//		printf("æœªæˆå¹´\n");
+//		printf("Î´³ÉÄê\n");
 //		printf("---------\n");
 //	}
 //	else
 //	{
 //		if (age >= 18 && age < 28)
-//			printf("é’å¹´\n");
+//			printf("ÇàÄê\n");
 //		else if (age >= 28 && age < 50)
-//			printf("å£®å¹´\n");
+//			printf("×³Äê\n");
 //		else if (age >= 50 && age < 90)
-//			printf("è€å¹´\n");
+//			printf("ÀÏÄê\n");
 //		else
-//			printf("è€ä¸æ­»\n");
+//			printf("ÀÏ²»ËÀ\n");
 //	}
 //	//else if (age >= 18 && age < 28)
-//	//	printf("é’å¹´\n");
+//	//	printf("ÇàÄê\n");
 //	////...
 //	//else
-//	//	printf("è€ä¸æ­»\n");
+//	//	printf("ÀÏ²»ËÀ\n");
 //	return 0;
 //}
 
 //int main()
 //{
-//	;//æ˜¯ç©ºè¯­å¥
+//	;//ÊÇ¿ÕÓï¾ä
 //
 //	return 0;
 //}
