@@ -1,0 +1,5 @@
+﻿  test_6_6.c
+E:\C语言\test_6_6\test_6_6\test_6_6.c(21,12): warning C4047: “函数”:“FILE *”与“char”的间接级别不同
+E:\C语言\test_6_6\test_6_6\test_6_6.c(21,9): warning C4024: “fgetc”: 形参和实参 1 的类型不同
+E:\C语言\test_6_6\test_6_6\test_6_6.c(21,14): warning C4020: “fgetc”: 实参太多
+  test_6_6.vcxproj -> E:\C语言\test_6_6\Debug\test_6_6.exe
